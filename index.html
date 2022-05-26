@@ -55,7 +55,19 @@
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
-                <button class="hero-button" type="button">Заказать услугу</button>
+                <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+            </div>
+        <!--Модальное окно-->
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal-wrapper">
+                    <button class="modal-btn" data-modal-close>
+                        <svg class="modal-icon" width="11px" height="11px">
+                            <use href="./images/symbol-defs.svg#closeback"></use>
+                        </svg>
+                    </button>
+                    <!--form class="modal-form"></form-->
+                    
+                </div>
             </div>
         </section>
         <!--Особенности-->
@@ -119,14 +131,17 @@
                     <li class="item activity-item">
                         <img class="img" src="./images/activ/box1/img.jpg" alt="Написание исходного кода" width="370"
                             height="294">
+                        <p class="img-title">Десктопные приложения</p>
                     </li>
                     <li class="item activity-item">
                         <img class="img" src="./images/activ/box2/img.jpg" alt="Создание мобильного приложения"
                             width="370" height="294">
+                        <p class="img-title">Мобильные приложения</p>
                     </li>
                     <li class="item activity-item">
                         <img class="img" src="./images/activ/box3/img.jpg" alt="Работа над дизайном" width="370"
                             height="294">
+                        <p class="img-title">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -421,6 +436,16 @@
             </div>
         </div>
     </footer>
+<!--Модальное окно-->
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia adipisci quas numquam rem, assumenda quod repellat temporibus magnam. Ut architecto ab earum numquam aspernatur quas! Unde a hic officiis consequatur.</p>
+            <button>Закрыть</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
+
+
 
 </html>
