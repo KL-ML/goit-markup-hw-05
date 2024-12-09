@@ -351,8 +351,6 @@ a {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    width: 18px;
-    height: 23px;
 
     fill: var(--brand-color-dark);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
